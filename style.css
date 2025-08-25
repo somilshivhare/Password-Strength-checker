@@ -306,7 +306,7 @@ input.invalid {
     background: #48bb78;
 }
 
-.meter-bar.breached-password::before,
+.meter-bar.breached-password::before {
     width: 100%;
     background: #e53e3e;
     animation: pulse 2s infinite;
@@ -393,16 +393,145 @@ button:disabled {
     }
 }
 
-@media (max-width: 480px) {
+/* Mobile Responsiveness - Preserving Original UI */
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+    
     .container {
         padding: 1.5rem;
+        max-width: 100%;
     }
-
-    h1 {
-        font-size: 1.5rem;
+    
+    .card {
+        width: 100%;
     }
+    
+    .form {
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+    }
+    
+    .btn {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .button1, .button2 {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    
+    .button3 {
+        width: 100%;
+    }
+    
+    .password-rules {
+        margin-top: 1.5rem;
+        padding: 1rem;
+    }
+    
+    .strength-meter {
+        margin-top: 1rem;
+        padding: 1rem;
+    }
+}
 
-    input, button {
-        padding: 0.625rem;
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+    
+    .container {
+        padding: 1rem;
+    }
+    
+    .form {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    
+    #heading {
+        font-size: 1.1em;
+        margin: 1.5em 1em;
+    }
+    
+    .field {
+        padding: 0.5em;
+    }
+    
+    .btn {
+        margin-top: 2em;
+    }
+    
+    .button1, .button2, .button3 {
+        padding: 0.8em;
+        font-size: 0.95rem;
+    }
+    
+    .password-rules h3 {
+        font-size: 1rem;
+    }
+    
+    .password-rules li {
+        font-size: 0.9rem;
+        padding: 0.5rem 0.8rem;
+    }
+    
+    .strength-meter {
+        padding: 0.8rem;
+    }
+    
+    #strengthText {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 360px) {
+    .form {
+        padding-left: 0.8em;
+        padding-right: 0.8em;
+    }
+    
+    #heading {
+        font-size: 1em;
+        margin: 1em 0.5em;
+    }
+    
+    .field {
+        padding: 0.4em;
+    }
+    
+    .button1, .button2, .button3 {
+        padding: 0.7em;
+        font-size: 0.9rem;
+    }
+    
+    .password-rules {
+        padding: 0.8rem;
+    }
+    
+    .password-rules li {
+        font-size: 0.85rem;
+        padding: 0.4rem 0.6rem;
+    }
+}
+
+/* Touch-friendly improvements for mobile */
+@media (max-width: 768px) {
+    .toggle-password {
+        min-width: 44px;
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    button {
+        min-height: 44px;
+        -webkit-tap-highlight-color: transparent;
     }
 }
