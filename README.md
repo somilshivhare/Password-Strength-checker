@@ -1,6 +1,11 @@
 # Password Strength Checker - DSA Project
 
-A simple password strength checker application that validates passwords against common and breached password databases.
+A comprehensive password strength checker application that validates passwords against common and breached password databases. Features both C++ and Node.js implementations with real-time validation.
+
+## 🌐 **Live Demo**
+**Try it now**: [https://password-strength-checker-smoky.vercel.app](https://password-strength-checker-smoky.vercel.app)
+
+## 📱 **Features**
 
 ## Features
 
@@ -99,3 +104,14 @@ It means you are not in the correct directory. To fix this:
    node server.js
    ```
 This will start your server correctly.
+
+## 🚀 **Deployment**
+
+This project is deployed on Vercel and can be accessed at:
+**https://password-strength-checker-smoky.vercel.app**
+
+### **Deployment Features:**
+- ✅ **Global CDN** - Fast loading worldwide
+- ✅ **Automatic deployments** from GitHub
+- ✅ **Professional hosting** for free
+- ✅ **HTTPS enabled** for security
